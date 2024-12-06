@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Register for the Event</h1>
+        <p class="disclaimer">* The event will start promptly at the scheduled time. Please check your email for updates!</p>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message" placeholder="Your message"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Upload Image (Optional):</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
